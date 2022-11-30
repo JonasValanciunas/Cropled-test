@@ -1,0 +1,9 @@
+<div class="chart-page w-100 h-100 position-relative d-flex flex-column">
+  <div class="d-flex align-items-center w-100 mx-5 px-5 my-4">
+    <button class="chart-btn" [class.blue]="activeColor === 0" (click)="changeColor(0)">Blue</button>
+    <button class="chart-btn" [class.red]="activeColor === 1" (click)="changeColor(1)">Red</button>
+    <button class="chart-btn" [class.yellow]="activeColor === 2" (click)="changeColor(2)">Yellow</button>
+  </div>
+
+  <div [chart]="chart"></div>
+</div>
